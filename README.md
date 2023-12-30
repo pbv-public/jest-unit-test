@@ -41,7 +41,7 @@ class Example {
 
 The test suite would be placed in a `unit-test-example.js` file, in a test suite `ExampleTest`, which have 2 test cases.
 ```js
-const { BaseTest, runTests } = require('@pocketgems/unit-test')
+const { BaseTest, runTests } = require('@pbvision/jest-unit-test')
 ```
 
 ```javascript <!-- embed:./test/unit-test-example.js:scope:ExampleTest -->
@@ -65,8 +65,8 @@ runTests(ExampleTest)
 This library also provides custom Jest reporters, you can configure Jest to use these like this:
 ```json
 "reporters": [
-    "@pocketgems/unit-test/src/custom-reporter.js",
-    "@pocketgems/unit-test/src/summary-reporter.js"
+    "@pbvision/jest-unit-test/src/custom-reporter.js",
+    "@pbvision/jest-unit-test/src/summary-reporter.js"
 ]
 ```
 

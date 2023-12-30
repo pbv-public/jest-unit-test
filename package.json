@@ -1,5 +1,5 @@
 {
-    "name": "@pocketgems/unit-test",
+    "name": "@pbvision/jest-unit-test",
     "version": "0.2.0",
     "description": "A thin wrapper around Jest and Supertest to provide better organization",
     "main": "src/test.js",
@@ -25,7 +25,10 @@
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
-        "url": "https://github.com/pocketgems/unit-test"
+        "url": "https://github.com/pbv-public/jest-unit-test"
+    },
+    "publishConfig": {
+        "registry": "https://registry.npmjs.org"
     },
     "dependencies": {
         "chalk": "^4.0.0",
