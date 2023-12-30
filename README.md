@@ -1,6 +1,6 @@
 # Unit Testing Utils <!-- omit in toc -->
 Todea unit test utils provides a thin wrapper around Jest and Supertest to help
-improve organization of test cases, and display only relavant debug information
+improve organization of test cases, and display only relevant debug information
 to speed up development.
 
 ## Topics <!-- omit in toc -->
