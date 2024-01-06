@@ -34,11 +34,11 @@ class CustomReporter extends SummaryReporter {
       const test = line.match(/.*Test: (.*)/)
       if (test) {
         currentTest = test[1]
-        const currentData = parsedLines[currentSuite][currentTest]
+        const currentData = parsedLines[currentSuite]?.[currentTest]
         parsedLines[currentSuite][currentTest] = currentData || []
         continue
       }
-      if (parsedLines[currentSuite][currentTest]) {
+      if (parsedLines[currentSuite]?.[currentTest]) {
         parsedLines[currentSuite][currentTest].push(line)
       } else {
         console.log(line)
