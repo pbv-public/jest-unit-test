@@ -256,7 +256,10 @@ class CustomReporter extends SummaryReporter {
 
   onRunComplete (ctx, results) {
     const runTime = ((Date.now() - results.startTime) / 1000).toFixed(2)
-    const rootPath = ctx.values().next().value.config.rootDir
+    const rootPath = ctx.values().next().value?.config?.rootDir
+    if (!rootPath) {
+      return
+    }
     // Jest supports running tests with multiple workers, which makes the time
     // elapsed to be much lower than the total time spent by all workers.
     // Go through individual test results to aggregate total time instead.

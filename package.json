@@ -1,6 +1,6 @@
 {
     "name": "@pbvision/jest-unit-test",
-    "version": "0.2.1",
+    "version": "0.2.3",
     "description": "A thin wrapper around Jest and Supertest to provide better organization",
     "main": "src/test.js",
     "scripts": {
